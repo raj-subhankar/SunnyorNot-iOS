@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B579CA93BFA48CA27803C12 /* Pods_SunnyOrNot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3587B749B9391121267D77 /* Pods_SunnyOrNot.framework */; };
 		7C1FBF551EA675C3009A1FCB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1FBF541EA675C3009A1FCB /* AppDelegate.swift */; };
-		7C1FBF571EA675C3009A1FCB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1FBF561EA675C3009A1FCB /* ViewController.swift */; };
+		7C1FBF571EA675C3009A1FCB /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1FBF561EA675C3009A1FCB /* WeatherVC.swift */; };
 		7C1FBF5A1EA675C3009A1FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FBF581EA675C3009A1FCB /* Main.storyboard */; };
 		7C1FBF5D1EA675C3009A1FCB /* SunnyOrNot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C1FBF5B1EA675C3009A1FCB /* SunnyOrNot.xcdatamodeld */; };
 		7C1FBF5F1EA675C3009A1FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FBF5E1EA675C3009A1FCB /* Assets.xcassets */; };
@@ -18,12 +19,15 @@
 /* Begin PBXFileReference section */
 		7C1FBF511EA675C3009A1FCB /* SunnyOrNot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyOrNot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1FBF541EA675C3009A1FCB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C1FBF561EA675C3009A1FCB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C1FBF561EA675C3009A1FCB /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		7C1FBF591EA675C3009A1FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C1FBF5C1EA675C3009A1FCB /* SunnyOrNot.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SunnyOrNot.xcdatamodel; sourceTree = "<group>"; };
 		7C1FBF5E1EA675C3009A1FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C1FBF611EA675C3009A1FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C1FBF631EA675C3009A1FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		875AAAFAB9517DF2F0663752 /* Pods-SunnyOrNot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunnyOrNot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunnyOrNot/Pods-SunnyOrNot.debug.xcconfig"; sourceTree = "<group>"; };
+		CB3587B749B9391121267D77 /* Pods_SunnyOrNot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunnyOrNot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F119018D3E87ACA1B195F8FD /* Pods-SunnyOrNot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunnyOrNot.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunnyOrNot/Pods-SunnyOrNot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B579CA93BFA48CA27803C12 /* Pods_SunnyOrNot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59DCF06CEF425C9415D7B00E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				875AAAFAB9517DF2F0663752 /* Pods-SunnyOrNot.debug.xcconfig */,
+				F119018D3E87ACA1B195F8FD /* Pods-SunnyOrNot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7C1FBF481EA675C3009A1FCB = {
 			isa = PBXGroup;
 			children = (
 				7C1FBF531EA675C3009A1FCB /* SunnyOrNot */,
 				7C1FBF521EA675C3009A1FCB /* Products */,
+				59DCF06CEF425C9415D7B00E /* Pods */,
+				E67C0E94D2D1E40098F9707A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				7C1FBF541EA675C3009A1FCB /* AppDelegate.swift */,
-				7C1FBF561EA675C3009A1FCB /* ViewController.swift */,
+				7C1FBF561EA675C3009A1FCB /* WeatherVC.swift */,
 				7C1FBF581EA675C3009A1FCB /* Main.storyboard */,
 				7C1FBF5E1EA675C3009A1FCB /* Assets.xcassets */,
 				7C1FBF601EA675C3009A1FCB /* LaunchScreen.storyboard */,
@@ -67,6 +83,14 @@
 			path = SunnyOrNot;
 			sourceTree = "<group>";
 		};
+		E67C0E94D2D1E40098F9707A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB3587B749B9391121267D77 /* Pods_SunnyOrNot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C1FBF661EA675C3009A1FCB /* Build configuration list for PBXNativeTarget "SunnyOrNot" */;
 			buildPhases = (
+				29C1CE62620DA72EE83E0FF9 /* [CP] Check Pods Manifest.lock */,
 				7C1FBF4D1EA675C3009A1FCB /* Sources */,
 				7C1FBF4E1EA675C3009A1FCB /* Frameworks */,
 				7C1FBF4F1EA675C3009A1FCB /* Resources */,
+				030DA04A936C8A2F82367A90 /* [CP] Embed Pods Frameworks */,
+				06C28D6E89D86350A64CF2B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,12 +161,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		030DA04A936C8A2F82367A90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunnyOrNot/Pods-SunnyOrNot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06C28D6E89D86350A64CF2B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SunnyOrNot/Pods-SunnyOrNot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29C1CE62620DA72EE83E0FF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C1FBF4D1EA675C3009A1FCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C1FBF571EA675C3009A1FCB /* ViewController.swift in Sources */,
+				7C1FBF571EA675C3009A1FCB /* WeatherVC.swift in Sources */,
 				7C1FBF551EA675C3009A1FCB /* AppDelegate.swift in Sources */,
 				7C1FBF5D1EA675C3009A1FCB /* SunnyOrNot.xcdatamodeld in Sources */,
 			);
@@ -262,6 +337,7 @@
 		};
 		7C1FBF671EA675C3009A1FCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 875AAAFAB9517DF2F0663752 /* Pods-SunnyOrNot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SunnyOrNot/Info.plist;
@@ -269,11 +345,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.subhankar.SunnyOrNot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7C1FBF681EA675C3009A1FCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F119018D3E87ACA1B195F8FD /* Pods-SunnyOrNot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SunnyOrNot/Info.plist;
@@ -281,6 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.subhankar.SunnyOrNot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -303,6 +382,7 @@
 				7C1FBF681EA675C3009A1FCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,0 +1,6 @@
+framework module Pods_SunnyOrNot {
+  umbrella header "Pods-SunnyOrNot-umbrella.h"
+
+  export *
+  module * { export * }
+}
