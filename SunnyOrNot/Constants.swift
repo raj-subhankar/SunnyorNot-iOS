@@ -11,7 +11,7 @@ import Foundation
 let BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
 let LATITUDE = "lat="
 let LONGITUDE = "&lon="
-let APP_ID = ""
+let APP_ID = "&appid="
 let API_KEY = "3c9e1be1bb1fff145c64a4ee068ad85e"
 
 typealias DownloadComplete = () -> () 
