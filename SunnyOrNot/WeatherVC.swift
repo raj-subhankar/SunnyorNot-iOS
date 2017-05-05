@@ -17,7 +17,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var currentWeatherTypeLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
-    var currentWeather = CurrentWeather()
+    var currentWeather: CurrentWeather!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +25,21 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
+        
+        
+//        let weather: CurrentWeather?
+//        NetworkApiClient().getWeather{ (json) in
+//            
+//            weather(withJson: json)
+//            e
+//        }
+        
+        
+        currentWeather = CurrentWeather()
         currentWeather.downloadWeatherDetails {
-            //Setup UI
+            print("weather")
+            print(self.currentWeather.cityName)
+            self.updateMainUI()
         }
         
     }
@@ -43,6 +56,18 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
         
         return cell
+    }
+    
+    func updateMainUI() {
+        dateLabel.text = currentWeather.date
+        print(currentWeather.date)
+        currentTempLabel.text = "\(currentWeather.currentTemp)"
+        print(currentWeather.currentTemp)
+        currentWeatherTypeLabel.text = currentWeather.weatherType
+        print(currentWeather.weatherType)
+        locationLabel.text = currentWeather.cityName
+        print(currentWeather.cityName)
+        currentWeatherImage.image = UIImage(named: currentWeather.weatherType)
     }
 
 }
