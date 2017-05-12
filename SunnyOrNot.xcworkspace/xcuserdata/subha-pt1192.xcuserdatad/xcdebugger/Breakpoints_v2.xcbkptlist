@@ -10,59 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SunnyOrNot/WeatherVC.swift"
-            timestampString = "516203774.58755"
+            timestampString = "516292253.472134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SunnyOrNot.WeatherVC.viewDidLoad () -&gt; ()"
-                  moduleName = "SunnyOrNot"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/subha-pt1192/XcodeProjects/SunnyOrNot/SunnyOrNot/WeatherVC.swift"
-                  timestampString = "516290260.748791"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "739">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SunnyOrNot.WeatherVC.(viewDidLoad () -&gt; ()).(closure #1)"
-                  moduleName = "SunnyOrNot"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/subha-pt1192/XcodeProjects/SunnyOrNot/SunnyOrNot/WeatherVC.swift"
-                  timestampString = "516290260.750642"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "107">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SunnyOrNot/WeatherVC.swift"
-            timestampString = "516290639.46139"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "downloadForecastData(completed:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SunnyOrNot/WeatherVC.swift"
-            timestampString = "516290639.46139"
+            timestampString = "516292253.472134"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "downloadForecastData(completed:)"
             landmarkType = "7">
          </BreakpointContent>
